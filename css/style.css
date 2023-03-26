@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 238, 2368);
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #1a1a1a;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --backround-clr:#84c609;
+    --text-clr:#fff;
+    --heading-clr:#484848;
+    --background2-clr:rgba(232, 232, 232, 0.612);
+    --link-clr:#87c11c;
+}
+
+/* general classes*/
+a {
+    text-decoration: none;
+    color:var(--link-clr);
+}
+
+.mr-1 {
+    margin-right: 6%;
+}
+
+.mt-5{
+    margin-top: 5em !important;
+}
+
+.mt-1 {
+    margin-top: 1em;
+}
+
+p{
+    margin-bottom: 1em;
+}
+
+.responsive-img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn-primary{
+    padding: 10px;
+    border: 1px solid var(--link-clr);
+    display: inline-block;
+    background-color:var(--link-clr);
+    color: #fff;
+    margin-top: 10px;
+    transition: 0.5s ease;
+}
+
+.btn-primary:hover{
+border: 1px solid var(--link-clr);
+background-color: transparent;
+color: var(--link-clr);
+}
+
+/* header */
+
+.logo {
+    background-color: var(--backround-clr);
+    color: #fff;
+    font-size: 2.1em;
+    padding: 0.9em 1em;
+    text-align: center;
+}
+
+/* others */
+
+.container-fluid {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.main-content-holder {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+
+.content-card{
+    margin-bottom: 3em;
+}
+
+.col-12{
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 7px;
+    background-color: var(--text-clr);
+    border-radius: 1px solid red;
+}
+
+
+.col-6 {
+    width: 47%;
+    float: left;
+    background-color: rgb(238, 238, 2368);
+    padding: 30px;
+    border-radius: 7px;
+    box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.1);
+     margin-bottom: 1.5em; 
+}
+
+
+/* Blog */
+.blog-meta{
+    display: block;
+    margin-bottom: 10px;
+    color: var(--heading-clr);
+}
+
+/* headings */
+
+.section-heading {
+    color: var(--heading-clr);
+    border-bottom: 1px solid var(--heading-clr);
+    padding-bottom: 5px;
+    margin-bottom: 1.2em;
+    font-size: 1.5em;
+}
+
+.content-card-heading {
+    color: var(--link-clr);
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+
+
+/* footer */
+footer{
+    padding: 3em;
+    text-align: center;
+    margin-top: 3em;
+    background-color: rgba(45, 68, 2, 0.626);
+}
+
+
+
+@media screen and (max-width:800px){
+    .col-6{
+        width: 100%;
+    }
+}
